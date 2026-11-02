@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "name" : "EducationEncounter",
   "title" : "MK EducationEncounter profil FSH",
   "status" : "draft",
-  "date" : "2026-11-02T12:42:40+00:00",
+  "date" : "2026-11-02T12:48:50+00:00",
   "publisher" : "FHIR-utbildning",
   "jurisdiction" : [{
     "coding" : [{

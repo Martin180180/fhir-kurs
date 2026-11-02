@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "name" : "EducationEncounter",
   "title" : "MK EducationEncounter profil FSH",
   "status" : "draft",
-  "date" : "2026-11-02T12:38:29+00:00",
+  "date" : "2026-11-02T12:42:40+00:00",
   "publisher" : "FHIR-utbildning",
   "jurisdiction" : [{
     "coding" : [{
@@ -76,7 +76,14 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "differential" : {
     "element" : [{
       "id" : "Encounter",
-      "path" : "Encounter"
+      "path" : "Encounter",
+      "constraint" : [{
+        "key" : "edu-enc-1",
+        "severity" : "error",
+        "human" : "En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).",
+        "expression" : "status = 'finished' implies period.end.exists()",
+        "source" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter"
+      }]
     },
     {
       "id" : "Encounter.subject",

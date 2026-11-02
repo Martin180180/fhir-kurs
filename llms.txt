@@ -9,6 +9,7 @@
 
 ### Resource Profiles
 
+* [MK EducationEncounter profil FSH](StructureDefinition-EducationEncounter.md)
 * [Education Patient](StructureDefinition-EducationPatient.md)
 
 ### ImplementationGuides
